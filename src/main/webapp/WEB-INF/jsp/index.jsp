@@ -7,7 +7,7 @@
     <title>Web app</title>
     <link href="<c:url value='/resources/CSS/index.css '/>" rel="stylesheet" />
     <script src="<c:url value='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js' />"></script>
-    <script src="<c:url value='/resources/JS/addField.js' />"></script>
+    <script src="<c:url value='/resources/JS/index.js' />"></script>
 </head>
 <body>
 <h1>Add or search any word</h1>
@@ -18,7 +18,7 @@
         Definition
        <input type="text" name="definition" />
        Example
-       <input type="text" name="example" />
+       <input type="text" name="example" id="0" />
        <button id="add" type="button"> add more example </button>
    </form>
 </div>
