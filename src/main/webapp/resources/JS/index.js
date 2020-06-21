@@ -2,28 +2,27 @@ var nrOfInputs = 1;
 var errorMessage = "You can only have two examples";
 
 addOnClickEventOnExampleButton();
-addRestrictionOnButton();
 
 function addOnClickEventOnExampleButton(){
     $(document).ready(function(){
-        $("#add").on("click", function(){
-            var input = 'Example <input type="text" name="example" id="' + nrOfInputs++ + '"/>';
-            $("#addWords").append(input);
-        });
+        $("#add").bind("click", onClickAddButton);
     });
 }
 
+function onClickAddButton(){
+    addRestrictionOnButton();
+
+    var input = 'Example <input type="text" name="example" id="' + nrOfInputs++ + '"/>';
+    $("#addWords").append(input);
+}
+
 function addRestrictionOnButton(){
-    $(document).ready(function(){
-        $("#add").on("click", function(e){
-        e.preventDefault();
-            if(nrOfInputs > 2){
-                var paragrah = '<p>' + errorMessage + '</p>';
-                $("#addWords").append(paragrah);
-                $(this).prop('disabled',true);
-            }
-        });
-    });
+    if(nrOfInputs > 2){
+        var paragrah = '<p id="error">' + errorMessage + '</p>';
+        $("#addWords").append(paragrah);
+        //$(this).prop('disabled',true);
+        $("#add").unbind("click", onClickAddButton);
+    }
 }
 
 // hvis nrofinputs er store enn nrofinput er krevd.
