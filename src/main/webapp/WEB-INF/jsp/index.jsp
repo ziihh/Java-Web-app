@@ -10,23 +10,32 @@
     <script src="<jstl:url value='/resources/JS/index.js' />"></script>
 </head>
 <body>
-    <h2>Add or search any word</h2>
+    <h1>Urban Dictionary</h1>
     <div class="main">
-        <div class="form">
-           <form action="/index" id="addWords">
+        <p></p>
+        <div class="formWrapper">
+            <h2>Add or search any word</h2>
+            <form action="/index" id="addWords">
                 Word
                 <input type="text" name="word" />
                 Definition
                <input type="text" name="definition" />
                Example
                <input type="text" name="example" id="0" />
-               <button id="add" type="button"> add more example </button>
+
            </form>
+            <div class="buttons">
+            <button id="add" type="button"> + example </button>
+            <input type="submit" name="submit" />
+            </div>
+
         </div>
 
         <div class="search_field">
+            <h2>Search words</h2>
             <input type="search" name="search" />
             <button>Search</button>
+            <div class="line"/>
         </div>
     </div>
 </body>
