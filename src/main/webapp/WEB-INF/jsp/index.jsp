@@ -27,11 +27,11 @@
                <input type="text" name="definition" />
                Example
                <input type="text" name="example" id="0" />
-                <input type="submit" name="submit" value="submit" />
-           </form>
-            <div class="buttons">
+               <input type="submit" name="submit" value="submit" />
                 <button id="add" type="button"> + example </button>
-            </div>
+
+            </form>
+
 
         </div>
 
