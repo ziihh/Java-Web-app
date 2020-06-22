@@ -12,21 +12,25 @@
 <body>
     <h1>Urban Dictionary</h1>
     <div class="main">
-        <p></p>
+
         <div class="formWrapper">
             <h2>Add or search any word</h2>
-            <form action="/index" id="addWords">
+
+            <font color="red">${error}</font>
+
+            Welcome <jstl:out value="${name}"/> this user has been created.
+
+            <form action="/index" method="POST" id="addWords">
                 Word
                 <input type="text" name="word" />
                 Definition
                <input type="text" name="definition" />
                Example
                <input type="text" name="example" id="0" />
-
+                <input type="submit" name="submit" value="submit" />
            </form>
             <div class="buttons">
-            <button id="add" type="button"> + example </button>
-            <input type="submit" name="submit" />
+                <button id="add" type="button"> + example </button>
             </div>
 
         </div>

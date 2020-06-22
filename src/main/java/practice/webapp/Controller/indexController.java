@@ -17,13 +17,13 @@ public class indexController {
     @Autowired
     WordService wordService;
 
-    @RequestMapping(value = "/index", method = RequestMethod.GET)
+    @RequestMapping(value = "/", method = RequestMethod.GET)
     public String index(){
         return "index";
     }
 
 
-    @RequestMapping(value = "/index", method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(value = "/index", method = RequestMethod.POST)
     @ResponseBody
     public String addWord(Word word){
         return wordService.insertWordInDB(word);

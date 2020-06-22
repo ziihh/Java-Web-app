@@ -12,6 +12,10 @@ public class WordService {
     WordDAO wordDAO;
 
     public String insertWordInDB(Word word) {
+
+        if(word.getWord().isEmpty() || word.getDefinition().isEmpty() || word.getExample().isEmpty()){
+            return "fill all fields";
+        }
         wordDAO.save(word);
         return "word is saved";
     }
