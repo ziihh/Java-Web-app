@@ -18,7 +18,7 @@
 
             <font color="red">${error}</font>
 
-            Welcome <jstl:out value="${name}"/> this user has been created.
+            Welcome <jstl:out value="${name}"/> this word has been saved.
 
             <form action="/index" method="POST" id="addWords">
                 Word

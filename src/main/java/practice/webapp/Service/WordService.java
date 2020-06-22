@@ -11,12 +11,12 @@ public class WordService {
     @Autowired
     WordDAO wordDAO;
 
-    public String insertWordInDB(Word word) {
+    public boolean insertWordInDB(Word word) {
 
         if(word.getWord().isEmpty() || word.getDefinition().isEmpty() || word.getExample().isEmpty()){
-            return "fill all fields";
+            return false;
         }
         wordDAO.save(word);
-        return "word is saved";
+        return true;
     }
 }

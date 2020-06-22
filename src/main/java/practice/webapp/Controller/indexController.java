@@ -3,6 +3,7 @@ package practice.webapp.Controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -24,8 +25,12 @@ public class indexController {
 
 
     @RequestMapping(value = "/index", method = RequestMethod.POST)
-    @ResponseBody
-    public String addWord(Word word){
-        return wordService.insertWordInDB(word);
+    public String addWord(ModelMap model, Word word){
+        boolean temp = wordService.insertWordInDB(word);
+        if(!temp){
+            model.put("error", "fill all fields");
+        }
+        model.addAttribute("name", word.getWord());
+        return "index";
     }
 }
