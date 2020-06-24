@@ -5,22 +5,17 @@
 <html>
 <head>
     <title>Web app</title>
-    <link href="<jstl:url value='/resources/CSS/index.css '/>" rel="stylesheet" />
+    <link href="<jstl:url value='/resources/CSS/addWordsForm.css '/>" rel="stylesheet" />
     <script src="<jstl:url value='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js' />"></script>
-    <script src="<jstl:url value='/resources/JS/index.js' />"></script>
+    <script src="<jstl:url value='/resources/JS/addWordsForm.js' />"></script>
 </head>
 <body>
-    <h1>Urban Dictionary</h1>
     <div class="main">
 
         <div class="formWrapper">
-            <h2>Add or search any word</h2>
+            <h2>Add new word</h2>
 
-            <font color="red">${error}</font>
-
-            Welcome <jstl:out value="${name}"/> this word has been saved.
-
-            <form action="/index" method="POST" id="addWords">
+            <form action="/addWords" method="POST" id="addWords">
                 Word
                 <input type="text" name="word" />
                 Definition

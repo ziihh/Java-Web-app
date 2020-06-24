@@ -13,24 +13,21 @@ import practice.webapp.Entity.Word;
 import practice.webapp.Service.WordService;
 
 @Controller
-public class indexController {
+public class AddWordsFormController {
 
     @Autowired
     WordService wordService;
 
-    @RequestMapping(value = "/", method = RequestMethod.GET)
-    public String index(){
-        return "index";
-    }
 
 
-    @RequestMapping(value = "/index", method = RequestMethod.POST)
+
+    @RequestMapping(value = "/addWords", method = RequestMethod.POST)
     public String addWord(ModelMap model, Word word){
         boolean temp = wordService.insertWordInDB(word);
         if(!temp){
             model.put("error", "fill all fields");
         }
         model.addAttribute("name", word.getWord());
-        return "index";
+        return "home";
     }
 }

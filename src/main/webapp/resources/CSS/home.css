@@ -1,0 +1,25 @@
+body {
+   margin: 0;
+   padding: 0;
+}
+.header{
+   width: 80%;
+   height: 100vh;
+   background-color: #BCD3DD;
+   margin: 0 auto;
+   text-align: center;
+}
+
+.blueBorder{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 96.9%;
+    height: 3vh;
+    background-color: #33C3FF;
+    padding: 1rem;
+}
+.headerAboutDictionaryButton{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
