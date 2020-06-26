@@ -28,7 +28,17 @@ function isBeyondMaxNrOfInputs(){
     }
     return true;
 }
+/*
+redirectUser();
 
+function redirectUser(){
+    $(document).ready(function(){
+        $("#addWords").on("click", function(){
+            document.location.href = "addWordsForm";
+        })
+    })
+}
+*/
 // hvis nrofinputs er store enn nrofinput er krevd.
 /*
 

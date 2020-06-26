@@ -16,11 +16,11 @@
         </div>
         <h1>Urban Dictionary</h1>
         <p>Search and add new words in dictionary!</p>
-        <form action="/addWordsForm" method="GET" >
-            <input type="submit" name="submit" value="add word" />
+        <form action="/WordsForm" method="POST" >
+            <input type="submit" value="add words"/>
         </form>
-        <font color="red">${error}</font>
-        <jstl:out value="${name}"/> this word has been saved.
-    </div>
-</body>
-</html>
+        <!--  <input type="submit" value="add word" name="addWordsForm" id="addWords"/> -->
+          <jstl:out value="${successMessage}"/>
+      </div>
+  </body>
+  </html>

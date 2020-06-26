@@ -5,29 +5,36 @@ import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.*;
+import practice.webapp.DAO.WordDAO;
 import practice.webapp.Entity.Word;
 import practice.webapp.Service.WordService;
 
+import javax.swing.*;
+import java.util.List;
+
 @Controller
-public class AddWordsFormController {
+public class WordsFormController {
 
     @Autowired
     WordService wordService;
 
-
-
+    @Autowired
+    WordDAO wordDAO;
 
     @RequestMapping(value = "/addWords", method = RequestMethod.POST)
     public String addWord(ModelMap model, Word word){
-        boolean temp = wordService.insertWordInDB(word);
-        if(!temp){
-            model.put("error", "fill all fields");
+
+        String temp = wordService.insertWordInDB(word);
+
+        if(temp.isEmpty()){
+            model.addAttribute("successMessage", word.getWord() + " this word has been stored.");
+            return "home";
         }
-        model.addAttribute("name", word.getWord());
-        return "home";
+        model.addAttribute("errorMessage", temp);
+        return "WordsForm";
+
     }
+
 }

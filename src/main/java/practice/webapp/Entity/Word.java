@@ -17,7 +17,7 @@ import javax.validation.constraints.NotNull;
 public class Word {
 
     @Id
-    @Column(name = "wId")
+    @Column(name = "wid")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer wId;
 

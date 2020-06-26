@@ -12,9 +12,9 @@ public class HomeController {
         return "home";
     }
 
-    @RequestMapping(value = "/addWordsForm", method = RequestMethod.GET)
+    @RequestMapping(value = "/WordsForm", method = RequestMethod.POST)
     public String addWordsForm(){
-        return "addWordsForm";
+        return "WordsForm";
     }
-
+    
 }
