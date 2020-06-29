@@ -31,8 +31,8 @@
 
         <div class="search_field">
             <h2>Search words</h2>
-            <input type="search" name="search" />
-            <button>Search</button>
+            <input type="search" name="search" id="search" />
+            <button id="searchButton">Search</button>
             <div class="line"/>
         </div>
     </div>

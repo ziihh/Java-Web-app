@@ -28,6 +28,20 @@ function isBeyondMaxNrOfInputs(){
     }
     return true;
 }
+
+getInputValue();
+
+function getInputValue(){
+    $(document).ready(function(){
+
+        $("#search").keydown(function(){
+            var str = $("#search").val();
+            console.log(str);
+        })
+
+    })
+}
+
 /*
 redirectUser();
 
