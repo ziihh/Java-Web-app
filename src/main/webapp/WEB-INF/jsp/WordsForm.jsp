@@ -23,7 +23,7 @@
                <input type="text" name="definition" />
                Example
                <input type="text" name="example" id="0" />
-               <input type="submit" name="submit" value="submit" />
+               <input type="submit" name="submit" value="submit" id="submit" />
                 <button id="add" type="button"> + example </button>
             </form>
 

@@ -18,7 +18,7 @@ function onClickAddButton(){
         $("#add").off("click", onClickAddButton);
     }
 
-    var input = 'SecondExample <input type="text" name="secondexample" id="' + nrOfInputs++ + '"/>';
+    var input = 'SecondExample <input class="secExample" type="text" name="secondexample" id="' + nrOfInputs++ + '"/>';
     $("#addWords").append(input);
 }
 
