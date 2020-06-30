@@ -8,6 +8,7 @@
     <link href="<jstl:url value='/resources/CSS/WordsForm.css '/>" rel="stylesheet" />
     <script src="<jstl:url value='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js' />"></script>
     <script src="<jstl:url value='/resources/JS/WordsForm.js' />"></script>
+    <script src="<jstl:url value='/resources/JS/SearchField.js' />"></script>
 </head>
 <body>
     <div class="main">
@@ -28,13 +29,7 @@
             </form>
 
         </div>
-
-        <div class="search_field">
-            <h2>Search words</h2>
-            <input type="search" name="search" id="search" />
-            <button id="searchButton">Search</button>
-            <div class="line"/>
-        </div>
+        <jsp:include page="searchField.jsp"/>
     </div>
 </body>
 </html>

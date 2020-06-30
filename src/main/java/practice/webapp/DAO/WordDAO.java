@@ -10,4 +10,5 @@ import java.util.List;
 public interface WordDAO extends JpaRepository<Word, Integer> {
 
     Word findByWord(String word);
+
 }
