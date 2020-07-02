@@ -6,12 +6,13 @@
 <head>
     <title>Web app</title>
     <link href="<jstl:url value='/resources/CSS/WordsForm.css '/>" rel="stylesheet" />
+    <link href="<jstl:url value='/resources/CSS/searchField.css '/>" rel="stylesheet" />
     <script src="<jstl:url value='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js' />"></script>
     <script src="<jstl:url value='/resources/JS/WordsForm.js' />"></script>
     <script src="<jstl:url value='/resources/JS/SearchField.js' />"></script>
 </head>
 <body>
-    <div class="main">
+    <div class="mainBody">
 
         <div class="formWrapper">
             <h2>Add new word</h2>

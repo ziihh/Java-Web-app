@@ -1,8 +1,5 @@
-
-.search_field{
-    width: 50%;
-    padding-top: 5rem;
-    text-align: center;
+.main{
+    text-align:center;
 }
 
 input[type=search],  select{
@@ -15,7 +12,11 @@ input[type=search],  select{
 }
 
 .line{
+    position: absolute;
+    width: 100%;
+    top: 9rem;
     border: 1px solid black;
+    z-index: -1;
 }
 
 
@@ -27,5 +28,17 @@ input[type=search],  select{
     margin: 0 9rem;
     display:flex;
     flex-direction: column;
+}
 
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+    padding: 0.5rem;
+}
+
+a:hover{
+    text-decoration: underline;
+    background-color: darkgrey;
 }

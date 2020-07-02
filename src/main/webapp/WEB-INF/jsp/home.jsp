@@ -17,7 +17,7 @@
         <h1>Urban Dictionary</h1>
         <p>Search and add new words in dictionary!</p>
         <form action="/WordsForm" method="POST" >
-            <input type="submit" value="add words"/>
+            <input type="submit" value="add words" id="addWordsButton"/>
         </form>
         <!--  <input type="submit" value="add word" name="addWordsForm" id="addWords"/> -->
           <jstl:out value="${successMessage}"/>

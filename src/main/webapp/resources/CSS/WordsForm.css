@@ -1,3 +1,9 @@
+.mainBody{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+}
+
+
 h1{
     text-align: center;
 }
@@ -11,20 +17,14 @@ input[type=text],  select {
      box-sizing: border-box;
 }
 
-.main{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
 .formWrapper{
     width: 30rem;
     padding-left: 1rem;
-    background-color: aqua;
+    background-color: #BCD3DD;
 }
 #addWords{
     width: 100%;
-    height: 50vh;
+    height: 20rem;
     padding: 1rem;
     margin: 2rem -1rem;
 }
@@ -41,7 +41,7 @@ input[type=text],  select {
     position: absolute;
     top: 25.7rem;
     margin-left: 21.6rem;
-    background-color: #4CAF50;
+    background-color: #33C3FF;
     border: none;
     color: white;
     padding: 10px 15px;
@@ -54,7 +54,7 @@ input[type=text],  select {
 #submit{
     position: absolute;
     top: 25.7rem;
-    background-color: #4CAF50;
+    background-color: #33C3FF;
     border: none;
     color: white;
     padding: 10px 15px;
