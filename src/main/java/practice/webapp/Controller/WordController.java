@@ -15,7 +15,7 @@ import javax.swing.*;
 import java.util.List;
 
 @Controller
-public class WordsFormController {
+public class WordController {
 
     @Autowired
     WordService wordService;
@@ -34,7 +34,19 @@ public class WordsFormController {
         }
         model.addAttribute("errorMessage", temp);
         return "WordsForm";
+    }
 
+    @RequestMapping(value = "/keyword/{searchedKeyword}")
+    public String getInfoAboutSearchedKeyword(ModelMap model, @PathVariable(value = "searchedKeyword") String searchedKeyword) {
+        System.out.print(searchedKeyword);
+        Word wordTemp = wordService.findByWord(searchedKeyword);
+        model.addAttribute("Word", wordTemp.getWord());
+        model.addAttribute("Definition", wordTemp.getDefinition());
+        model.addAttribute("Example", wordTemp.getExample());
+        if(wordTemp.getSecondexample() != null){
+            model.addAttribute("SecondExample", wordTemp.getSecondexample());
+        }
+        return "wordDetail";
     }
 
 }

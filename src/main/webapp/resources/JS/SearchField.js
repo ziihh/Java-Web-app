@@ -34,8 +34,7 @@ function POSTRequest(inputValue){
 
             $("#DropDownSearchContainer").empty();
             for(var i = 0; i < res.length; i++){
-
-                anchorTag = "<a href=#" + res[i] + ">" + res[i] + "</a>";
+                anchorTag = "<a href=keyword/" + res[i] + ">" + res[i] + "</a>";
                 $("#DropDownSearchContainer").append(anchorTag);
             }
             console.log(res);

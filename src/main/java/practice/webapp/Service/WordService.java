@@ -36,6 +36,12 @@ public class WordService {
         return wordDAO.findByWord(word);
     }
 
+
+    public List<String> listAllMatchingWords(String searchWord) {
+        return wordDAO.findAllByMatchingKeyword(searchWord);
+    }
+
+
    /* public Boolean validateWord(Word word){
         if (word.getExample().equals(word.getSecondexample())) {
             return false;
