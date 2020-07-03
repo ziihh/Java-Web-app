@@ -12,8 +12,9 @@
     <script src="<jstl:url value='/resources/JS/SearchField.js' />"></script>
 </head>
 <body>
-    <div class="mainBody">
+<button class="PreviousPage">Back</button>
 
+    <div class="mainBody">
         <div class="formWrapper">
             <h2>Add new word</h2>
 

@@ -44,4 +44,14 @@ function POSTRequest(inputValue){
         }
     });
 }
+onClickPreviousPage();
+function onClickPreviousPage(){
+
+    $(document).ready(function(){
+        $(".PreviousPage").on("click", function(){
+            parent.history.back();
+        })
+    })
+
+}
 
