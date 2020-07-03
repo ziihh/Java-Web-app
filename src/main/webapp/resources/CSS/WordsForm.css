@@ -4,9 +4,7 @@
 }
 
 
-h1{
-    text-align: center;
-}
+
 input[type=text],  select {
      width: 92%;
      padding: 12px 20px;
@@ -31,7 +29,7 @@ input[type=text],  select {
 
 #error{
     position: absolute;
-    top: 3rem;
+    top: 9rem;
     border: 5px solid red;
     background-color: red;
     color: white;
@@ -39,11 +37,11 @@ input[type=text],  select {
 
 #add{
     position: absolute;
-    top: 25.7rem;
+    top: 31.5rem;
     margin-left: 21.6rem;
-    background-color: #33C3FF;
+    background-color: #f1f1f1;
     border: none;
-    color: white;
+    color: black;
     padding: 10px 15px;
     text-align: center;
     text-decoration: none;
@@ -53,10 +51,10 @@ input[type=text],  select {
 
 #submit{
     position: absolute;
-    top: 25.7rem;
-    background-color: #33C3FF;
+    top: 31.5rem;
+    background-color: #f1f1f1;
     border: none;
-    color: white;
+    color: black;
     padding: 10px 15px;
     text-align: center;
     text-decoration: none;
@@ -65,3 +63,32 @@ input[type=text],  select {
     width: 26%;
 }
 
+#submit:hover{
+    background-color: #ddd;
+    color: black;
+}
+#add:hover{
+    background-color: #ddd;
+    color: black;
+}
+
+.blueBorder{
+
+    background-color: #33C3FF;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+
+.PreviousPage{
+    background-color: #f1f1f1;
+    color: black;
+    border: none;
+    padding: 0.5rem;
+    cursor:pointer;
+}
+
+.PreviousPage:hover{
+    background-color: #ddd;
+    color: black;
+}

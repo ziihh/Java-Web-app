@@ -13,8 +13,8 @@ input[type=search],  select{
 
 .line{
     position: absolute;
-    width: 100%;
-    top: 9rem;
+    width:39rem;
+    top: 14rem;
     border: 1px solid black;
     z-index: -1;
 }

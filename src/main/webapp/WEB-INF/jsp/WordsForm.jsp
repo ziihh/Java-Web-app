@@ -12,7 +12,10 @@
     <script src="<jstl:url value='/resources/JS/SearchField.js' />"></script>
 </head>
 <body>
-<button class="PreviousPage">Back</button>
+
+    <div class="blueBorder">
+        <button class="PreviousPage">&laquo; Previous</button>
+    </div>
 
     <div class="mainBody">
         <div class="formWrapper">
