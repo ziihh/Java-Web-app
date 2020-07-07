@@ -48,5 +48,4 @@ public class WordController {
         }
         return "wordDetail";
     }
-
 }

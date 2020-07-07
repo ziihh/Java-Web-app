@@ -16,5 +16,10 @@ public class HomeController {
     public String addWordsForm(){
         return "WordsForm";
     }
+
+    @RequestMapping(value = "/form", method = RequestMethod.GET)
+    public String form(){
+        return "form";
+    }
     
 }

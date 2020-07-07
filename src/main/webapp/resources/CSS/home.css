@@ -14,14 +14,13 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    width: 96.9%;
-    height: 3vh;
+    width: 100%;
     background-color: #33C3FF;
     padding: 1rem;
 }
-.headerAboutDictionaryButton{
-    padding-left: 2rem;
-    padding-right: 2rem;
+a{
+    padding: 1rem;
+    color: black !important;
 }
 
 #addWordsButton{
@@ -36,3 +35,4 @@ body {
     margin: 4px 2px;
     cursor: pointer;
 }
+
